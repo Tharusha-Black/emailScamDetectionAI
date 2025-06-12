@@ -1,0 +1,15 @@
+
+beautifulsoup4
+blinker
+google-api-core
+joblib
+numpy
+pandas
+pillow
+scikit-learn
+scipy
+torch
+transformers
+Werkzeug
+whois
+
