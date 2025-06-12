@@ -1,0 +1,625 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+/* Login Form Styles */
+.login-container {
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-box {
+    max-width: 400px;
+    width: 100%;
+}
+
+form .form-control {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard Styles */
+.sidebar {
+    
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.email-list .email-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.email-list .email-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Color Styling for Spam/Non-Spam */
+.email-item.spam {
+    background-color: #f8d7da;
+    border-left: 5px solid red;
+}
+
+.email-item.not-spam {
+    background-color: #d4edda;
+    border-left: 5px solid green;
+}
+
+/* Buttons */
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Top Section */
+.top-section {
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    height: 180px;
+}
+
+/* Input Fields */
+textarea, input[type="text"] {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.file-input {
+    margin-bottom: 20px;
+}
+
+.file-input input[type="text"], .file-input textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.file-input button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#login-section {
+    width: 100%;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.login-box:hover {
+    transform: translateY(-5px);
+}
+
+.login-box h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+#login-form input {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#login-form input:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+#login-form button {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#login-form button:hover {
+    background: linear-gradient(to right, #5a6fd1, #6a3d9a);
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 1.5rem;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Dashboard Container */
+#dashboard-section {
+    display: none;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Main Grid Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.sidebar:hover {
+    transform: translateY(-5px);
+}
+
+.h4 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(102, 126, 234, 0.3);
+}
+
+
+/* Email List */
+.email-list {
+    max-height: 80vh;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.email-item {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    border-left: 4px solid #667eea;
+}
+
+.email-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.email-item.spam {
+    border-left-color: #ff4757;
+}
+
+.email-item.legitimate {
+    border-left-color: #2ed573;
+}
+
+/* Main Content */
+.main-content {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Result Display */
+#check-result {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    height: 180px;
+    transition: all 0.3s ease;
+}
+
+/* Input Fields */
+.file-input textarea,
+.file-input input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.file-input textarea:focus,
+.file-input input:focus {
+    border-color: #667eea;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+/* Buttons */
+#check-spam-btn,
+#check-url-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#check-spam-btn {
+    background: linear-gradient(to right, #ffa502, #ff6348);
+    color: white;
+}
+
+#check-spam-btn:hover {
+    background: linear-gradient(to right, #e69500, #e55338);
+    transform: translateY(-2px);
+}
+
+#check-url-btn {
+    background: linear-gradient(to right, #ff4757, #ff6b81);
+    color: white;
+}
+
+#check-url-btn:hover {
+    background: linear-gradient(to right, #e63c4a, #e55b71);
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        order: 2;
+    }
+}
+.dashboard-grid {
+    grid-template-columns: 400px 1fr;
+}
+/* Email List Container */
+#emails-list {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100%;
+}
+
+/* Email Item */
+.email-item {
+    background-color: #f8f9fa;
+    border-left: 4px solid;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.email-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+/* Status Colors */
+.email-item.legitimate {
+    border-left-color: #28a745;
+}
+
+.email-item.spam {
+    border-left-color: #dc3545;
+}
+
+/* Email Content */
+.email-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.email-field {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.email-field:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.email-value {
+    flex: 1;
+    word-break: break-word;
+}
+
+.status-value {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.legitimate .status-value {
+    color: #28a745;
+}
+
+.spam .status-value {
+    color: #dc3545;
+}
+
+/* URLs Container */
+.urls-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.url-status-item {
+    width: 100%;
+}
+
+.url-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: default;
+    box-sizing: border-box;
+}
+
+.url-badge .prediction {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    min-width: 70px;
+}
+
+.url-badge .url-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+}
+
+.url-badge:hover .url-text {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    word-break: break-all;
+}
+
+/* URL Status Colors */
+.url-badge.phishing {
+    background-color: #c10d1c;
+    color: #e1e0e0;
+    border-left: 3px solid #dc3545;
+}
+
+.url-badge.legitimate {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 3px solid #28a745;
+}
+
+.url-badge.unknown {
+    background-color: #e2e3e5;
+    color: #383d41;
+    border-left: 3px solid #6c757d;
+}
+/* Loading States */
+.spinner-border {
+    margin-right: 8px;
+}
+
+.loading-placeholder {
+    height: 120px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    border-radius: 8px;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Result Display */
+.result-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.result-icon {
+    font-size: 2.5rem;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.result-content h5 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.result-content p {
+    margin: 5px 0;
+    color: inherit;
+}
+
+/* Result Types */
+.success-result {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 5px solid #28a745;
+}
+
+.danger-result {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 5px solid #dc3545;
+}
+
+.warning-result {
+    background-color: #fff3cd;
+    color: #856404;
+    border-left: 5px solid #ffc107;
+}
+
+.error-result {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 5px solid #dc3545;
+}
+
+/* Input Fields */
+.file-input {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.file-input textarea,
+.file-input input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.file-input textarea:focus,
+.file-input input[type="text"]:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.file-input button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.file-input button:hover {
+    background-color: #0069d9;
+}
+
+.file-input button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.65;
+}
